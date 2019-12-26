@@ -2,8 +2,8 @@
 
 int main()
 {
-	int nx = 200;
-	int ny = 100;
+	int nx = 3840;
+	int ny = 2160;
 
 	std::ofstream myfile;
 	myfile.open("image.ppm");
@@ -13,7 +13,7 @@ int main()
 	{
 		for (int i = 0; i < nx; i++)
 		{
-			Ray::Vector3D col(static_cast<double>(i) / static_cast<double>(nx), static_cast<double>(j) / static_cast<double>(ny), 0.2);
+			Raytracing::Vector3D col(static_cast<double>(i) / static_cast<double>(nx), static_cast<double>(j) / static_cast<double>(ny), 0.7);
 
 			int ir = static_cast<int>(255.9 * col[0]);
 			int ig = static_cast<int>(255.9 * col[1]);

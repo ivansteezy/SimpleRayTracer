@@ -1,12 +1,13 @@
 #ifndef VECTOR3D_H
 #define VECTOR3D_H
 
+
 #include <iostream>
 #include <vector> //for std::vector
 #include <istream> //for std::istream
 #include <fstream>
 
-namespace Ray
+namespace Raytracing
 {
 	class Vector3D
 	{
